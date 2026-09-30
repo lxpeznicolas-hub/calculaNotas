@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="CalculaNotas - calcula tu promedio académico fácilmente">
+  <title>CalculaNotas | Tu promedio en segundos</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="navbar">
+    <div class="logo">📚 <span>Calcula</span>Notas</div>
+    <a href="#calculadora" class="nav-btn">Calcular ahora</a>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-text">
+        <p class="tag">✨ TU ASISTENTE ACADÉMICO</p>
+        <h1>Calcula tu promedio<br><span>en segundos.</span></h1>
+        <p class="description">
+          Ingresa tus notas, calcula tu promedio y descubre inmediatamente
+          si alcanzas la nota mínima para aprobar.
+        </p>
+        <a href="#calculadora" class="primary-btn">Empezar ahora →</a>
+      </div>
+
+      <div class="hero-card">
+        <div class="mini-icon">📊</div>
+        <p>Promedio</p>
+        <strong id="heroAverage">—</strong>
+        <div class="mini-bar"><span id="heroBar"></span></div>
+        <small>Tu progreso académico</small>
+      </div>
+    </section>
+
+    <section id="calculadora" class="calculator-section">
+      <div class="section-title">
+        <p class="tag">CALCULADORA</p>
+        <h2>Ingresa tus notas</h2>
+        <p>Usa una escala de 0.0 a 5.0. La nota mínima para aprobar es 3.0.</p>
+      </div>
+
+      <div class="calculator-card">
+        <div class="notes-grid">
+          <label class="note-box">
+            <span>Nota 1</span>
+            <input id="nota1" type="number" min="0" max="5" step="0.1" placeholder="0.0">
+          </label>
+          <label class="note-box">
+            <span>Nota 2</span>
+            <input id="nota2" type="number" min="0" max="5" step="0.1" placeholder="0.0">
+          </label>
+          <label class="note-box">
+            <span>Nota 3</span>
+            <input id="nota3" type="number" min="0" max="5" step="0.1" placeholder="0.0">
+          </label>
+        </div>
+
+        <div class="actions">
+          <button id="calcular" class="primary-btn" type="button">Calcular promedio</button>
+          <button id="limpiar" class="secondary-btn" type="button">Limpiar</button>
+        </div>
+
+        <div id="resultado" class="result" aria-live="polite">
+          <div class="result-icon">🎓</div>
+          <div>
+            <span>Tu resultado aparecerá aquí</span>
+            <strong>—</strong>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="how-section">
+      <div class="section-title">
+        <p class="tag">¿CÓMO FUNCIONA?</p>
+        <h2>Simple, rápido y claro</h2>
+      </div>
+
+      <div class="steps">
+        <article><div>1</div><h3>Escribe tus notas</h3><p>Introduce las tres calificaciones entre 0 y 5.</p></article>
+        <article><div>2</div><h3>Calcula</h3><p>La página suma tus notas y las divide entre tres.</p></article>
+        <article><div>3</div><h3>Conoce tu resultado</h3><p>Verás tu promedio y si alcanzas la nota mínima.</p></article>
+      </div>
+    </section>
+
+    <section class="formula">
+      <div>
+        <p class="tag">FÓRMULA</p>
+        <h2>Así calculamos tu promedio</h2>
+      </div>
+      <code>Promedio = (Nota 1 + Nota 2 + Nota 3) ÷ 3</code>
+    </section>
+  </main>
+
+  <footer>
+    <strong>CalculaNotas</strong>
+    <span>Proyecto académico · HTML + CSS + JavaScript</span>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
