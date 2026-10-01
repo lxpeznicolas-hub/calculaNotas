@@ -363,3 +363,74 @@ footer span { color: #9bb4ac; }
     font-size: 35px;
   }
 }
+/* PORTADA CALCULONOTASENSUP */
+.portada {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+  padding: 50px 7%;
+  background: linear-gradient(135deg, #eafff1, #ffffff);
+  min-height: 450px;
+  box-sizing: border-box;
+}
+
+.portada img {
+  width: 55%;
+  max-width: 650px;
+  height: auto;
+  display: block;
+  border-radius: 25px;
+  box-shadow: 0 15px 35px rgba(0, 100, 50, 0.18);
+}
+
+.portada > div {
+  flex: 1;
+  max-width: 500px;
+}
+
+.portada h1 {
+  font-size: 45px;
+  line-height: 1.1;
+  color: #08783b;
+  margin: 10px 0 20px;
+}
+
+.portada p {
+  font-size: 20px;
+  color: #444;
+  line-height: 1.5;
+}
+
+.portada a {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 14px 25px;
+  background: #079447;
+  color: white;
+  text-decoration: none;
+  border-radius: 12px;
+  font-weight: bold;
+}
+
+.portada a:hover {
+  background: #056d35;
+}
+
+/* Para celular */
+@media (max-width: 800px) {
+  .portada {
+    flex-direction: column;
+    padding: 30px 5%;
+    text-align: center;
+  }
+
+  .portada img {
+    width: 100%;
+    max-width: 600px;
+  }
+
+  .portada h1 {
+    font-size: 35px;
+  }
+}
