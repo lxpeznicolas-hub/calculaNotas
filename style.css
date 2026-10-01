@@ -284,3 +284,82 @@ footer span { color: #9bb4ac; }
   .formula code { width: 100%; overflow-wrap: anywhere; }
   footer { flex-direction: column; gap: 8px; }
 }
+/* PORTADA CALCULONOTASENSUP */
+.portada {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+  padding: 50px 7%;
+  background: linear-gradient(135deg, #eafff1, #ffffff);
+  min-height: 430px;
+  overflow: hidden;
+}
+
+.portada-imagen {
+  flex: 1;
+  max-width: 600px;
+}
+
+.portada-imagen img {
+  width: 100%;
+  display: block;
+  border-radius: 25px;
+  box-shadow: 0 15px 35px rgba(0, 100, 50, 0.18);
+}
+
+.portada-texto {
+  flex: 1;
+  max-width: 600px;
+}
+
+.portada-texto p:first-child {
+  color: #0b9b4b;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.portada-texto h1 {
+  font-size: 48px;
+  line-height: 1.1;
+  color: #08783b;
+  margin: 15px 0;
+}
+
+.portada-texto h1 strong {
+  color: #0a9f4b;
+}
+
+.portada-texto p {
+  font-size: 20px;
+  color: #444;
+  line-height: 1.5;
+}
+
+.portada-texto a {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 14px 25px;
+  background: #079447;
+  color: white;
+  text-decoration: none;
+  border-radius: 12px;
+  font-weight: bold;
+}
+
+.portada-texto a:hover {
+  background: #056d35;
+}
+
+/* Adaptación para celular */
+@media (max-width: 800px) {
+  .portada {
+    flex-direction: column;
+    padding: 30px 5%;
+    text-align: center;
+  }
+
+  .portada-texto h1 {
+    font-size: 35px;
+  }
+}
